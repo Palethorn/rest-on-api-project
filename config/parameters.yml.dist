@@ -1,0 +1,15 @@
+parameters:
+    environment: dev
+    project_name: my_project
+    project_dir: ../
+    log_dir: ../log
+    cache_dir: ../cache
+    database_host: 127.0.0.1
+    database_port: 3306
+    database_name: my_project
+    database_user: database_user
+    database_password: database_password
+    dns_name: example.com
+    ssl: false
+    jwt_secret: change_me
+    entity_namespace: Entity\\Namespace

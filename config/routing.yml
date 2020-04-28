@@ -1,0 +1,3 @@
+api:
+    resource: '../vendor/palethorn/rest-on-php/config/routing.yml'
+    prefix: /

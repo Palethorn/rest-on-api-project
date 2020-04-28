@@ -1,0 +1,6 @@
+imports:
+    - { resource: parameters.yml }
+    - { resource: '../vendor/palethorn/rest-on-php/config/services.yml' }
+    - { resource: services/*.yml }
+
+services:

@@ -1,0 +1,3 @@
+#!/bin/bash
+
+vendor/bin/doctrine-migrations --no-interaction $1 --configuration config/migrations.yml $2

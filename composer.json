@@ -1,0 +1,16 @@
+{
+    "name": "palethorn/rest-on-php-project",
+    "version": "1.0.0",
+    "license": "MIT",
+    "description": "Project build on rest-on-php",
+    "type": "project",
+    "keywords": ["rest", "php", "framework", "symfony", "components", "on", "palethorn"],
+    "require": {
+        "palethorn/rest-on-php": "dev-master"
+    },
+    "autoload":{
+        "psr-4": {
+            "App\\": "src"
+        }
+    }
+}
