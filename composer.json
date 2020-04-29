@@ -1,6 +1,5 @@
 {
     "name": "palethorn/rest-on-php-project",
-    "version": "1.0.0",
     "license": "MIT",
     "description": "Project built on rest-on-php",
     "type": "project",
