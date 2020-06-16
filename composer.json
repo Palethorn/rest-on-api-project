@@ -3,9 +3,9 @@
     "license": "MIT",
     "description": "Project built on rest-on-php",
     "type": "project",
-    "keywords": ["rest", "php", "framework", "symfony", "components", "on", "palethorn"],
+    "keywords": ["rest", "php", "framework", "symfony", "components", "on", "palethorn", "api"],
     "require": {
-        "palethorn/rest-on-php": "^1.0"
+        "palethorn/rest-on-php": "^0.0.3"
     },
     "autoload":{
         "psr-4": {
