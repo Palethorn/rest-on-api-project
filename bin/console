@@ -2,19 +2,9 @@
 <?php
 require __DIR__ . '/../vendor/autoload.php';
 
-use Symfony\Component\Config\FileLocator;
-use Symfony\Component\Console\Application;
-use Symfony\Component\DependencyInjection\ContainerBuilder;
-use Symfony\Component\DependencyInjection\Loader\YamlFileLoader;
+use RestOnPhp\Kernel;
 
-$dependencyContainer = new ContainerBuilder();
-$loader = new YamlFileLoader($dependencyContainer, new FileLocator(__DIR__ . '/../config'));
-$loader->load('services.yml');
-$commands = $dependencyContainer->findTaggedServiceIds('command');
-$application = new Application();
-
-foreach($commands as $id => $command) {
-    $application->add($dependencyContainer->get($id));
-}
+$kernel = new Kernel('cli', true);
+$application = $kernel->getDependencyContainer()->get('api.command.application');
 
 $application->run();

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<doctrine-migrations xmlns="http://doctrine-project.org/schemas/migrations/configuration"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://doctrine-project.org/schemas/migrations/configuration
+          ../vendor/doctrine/migrations/lib/Doctrine/Migrations/Configuration/XML/configuration.xsd">
+
+    <name>Migrations</name>
+    <migrations-namespace>Migrations</migrations-namespace>
+    <table name="doctrine_migration_versions" column="version" column_length="14" executed_at_column="executed_at"></table>
+    <migrations-directory>doctrine_migrations</migrations-directory>
+    <all-or-nothing>true</all-or-nothing>
+    <check-database-platform>true</check-database-platform>
+</doctrine-migrations>

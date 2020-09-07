@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<container xmlns="http://symfony.com/schema/dic/services"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xmlns:framework="http://symfony.com/schema/dic/symfony"
+xsi:schemaLocation="http://symfony.com/schema/dic/services
+    https://symfony.com/schema/dic/services/services-1.0.xsd
+    http://symfony.com/schema/dic/symfony
+    https://symfony.com/schema/dic/symfony/symfony-1.0.xsd">
+    <parameters>
+        <parameter key="environment">prod</parameter>
+        <parameter key="project_name">Application</parameter>
+        <parameter key="database_host">127.0.0.1</parameter>
+        <parameter key="database_port">3306</parameter>
+        <parameter key="database_name">app_database</parameter>
+        <parameter key="database_user">app_user</parameter>
+        <parameter key="database_password">app_password
+        <parameter key="dns_name">app.example.com</parameter>
+        <parameter key="ssl">true</parameter>
+        <parameter key="jwt_secret">UvKLsxg2Be5v4Fun</parameter>
+        <parameter key="entity_namespace">App\Entity</parameter>
+        <parameter key="user_entity">App\Entity\User</parameter>
+        <parameter key="token_bearer">cookie</parameter>
+        <parameter key="token_key">token</parameter>
+    </parameters>
+</container>

@@ -5,7 +5,7 @@
     "type": "project",
     "keywords": ["rest", "php", "framework", "symfony", "components", "on", "palethorn", "api"],
     "require": {
-        "palethorn/rest-on-php": "^0.0.3"
+        "palethorn/rest-on-php": "master-dev"
     },
     "autoload":{
         "psr-4": {

@@ -1,10 +1,14 @@
 <?php
 use Doctrine\ORM\Tools\Console\ConsoleRunner;
-require_once __DIR__ . '/../vendor/autoload.php';
-$parameters = Symfony\Component\Yaml\Yaml::parseFile(__DIR__ . '/parameters.yml');
-$parameters = $parameters['parameters'];
+use RestOnPhp\Kernel;
 
-// replace with mechanism to retrieve EntityManager in your app
+require_once __DIR__ . '/../vendor/autoload.php';
+
+$kernel = new Kernel('cli', false);
+$dependencyContainer = $kernel->getDependencyContainer();
+$parameters = $dependencyContainer->getParameterBag()->all();
+
+// replace with mechanism to retrieve EntityManager
 $doctrineEntityManagerFactory = new RestOnPhp\Factory\DoctrineEntityManagerFactory();
 $entityManager = $doctrineEntityManagerFactory->create(
     $parameters['database_host'],
